@@ -7,7 +7,8 @@ const paginateData = (items, currentPage) => {
 
   const lastPage = Math.ceil(items.length / ITEM_PER_PAGE);
 
-  const PAGES_PER_BLOCK = 5;
+
+  const PAGES_PER_BLOCK = 3;
   const actualBlock = Math.ceil(currentPage / PAGES_PER_BLOCK);
 
   //Paginas que se van a mostar en el bloque actual
