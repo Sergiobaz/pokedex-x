@@ -42,6 +42,8 @@ const usePokedex = () => {
       .catch((err) => console.log(err));
   }, []);
 
+ 
+
   return {
     name,
     pokemonName,
@@ -52,6 +54,6 @@ const usePokedex = () => {
     pokemonsByName,
     handleChange,
     types
-  };
+       };
 };
 export default usePokedex;

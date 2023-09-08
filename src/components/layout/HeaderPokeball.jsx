@@ -12,13 +12,13 @@ const HeaderPokeball = ({ children }) => {
       <header>
         <section>
           <div className="h-16 bg-red-600 relative"></div>
-          <div className=" absolute left-0 top-7 w-[220px] sm:w[300px]">
+          <div className=" absolute  sm:left-14 top-7 w-[220px] sm:w[300px]">
             <img src="/images/pokedexhomeimage.png" alt="" />
           </div>
           <div className="h-12 bg-black relative">
             <div
               onClick={handleLogOut} className="h-16 aspect-square rounded-full bg-white absolute
-         right-0 -translate-x-1/2 bottom-3 border-[8px]
+         sm:right-0 right-[-10px] -translate-x-1/2 bottom-3 border-[8px]
           border-black after:block after:content-[''] 
           after:h-8 after:aspect-square after:bg-gray-500
            after:left-1/2 after:-translate-x-1/2 after:top-1/2
