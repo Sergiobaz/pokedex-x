@@ -19,7 +19,7 @@ export const Home = () => {
       <section className=" flex justify-center items-center">
         <article>
           <div>
-            <img src="/public/images/pokedexhomeimage.png" alt="" />
+            <img src="/images/pokedexhomeimage.png" alt="" />
           </div >
           <h2>Hello trainer!</h2>
           <p>To start, give me your name</p>
