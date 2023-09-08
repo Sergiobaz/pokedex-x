@@ -25,8 +25,8 @@ const Pagination = ({ currentPage, lastPage, pagesInCurrentBlock, setCurrentPage
 
   return (
     <ul className="flex justify-center gap-1 items-center  mt-4">
-      <li className=" cursor-pointer" onClick={handleFirstPage}><img src="src\assets\bx-chevrons-left.svg" alt="" /></li>
-      <li className=" cursor-pointer" onClick={handlePrevPage}><img src="src\assets\bx-chevron-left.svg" alt="" /></li>
+      <li className=" cursor-pointer" onClick={handleFirstPage}><img src="src/assets/bx-chevrons-left.svg" alt="" /></li>
+      <li className=" cursor-pointer" onClick={handlePrevPage}><img src="src/assets/bx-chevron-left.svg" alt="" /></li>
       {pagesInCurrentBlock.map((page) => (
         <li
           className={`p-2 px-3 cursor-pointer rounded-sm ${currentPage == page ? " bg-[#DD1A1A] " : ""}`}
@@ -37,8 +37,8 @@ const Pagination = ({ currentPage, lastPage, pagesInCurrentBlock, setCurrentPage
         </li>
       ))}
 
-      <li className=" cursor-pointer" onClick={handleNextPage}><img src="src\assets\bx-chevron-right.svg" alt="" /></li>
-      <li className=" cursor-pointer" onClick={handleLastPage}><img src="src\assets\bx-chevrons-right.svg" alt="" /></li>
+      <li className=" cursor-pointer" onClick={handleNextPage}><img src="src/assets/bx-chevron-right.svg" alt="" /></li>
+      <li className=" cursor-pointer" onClick={handleLastPage}><img src="src/assets/bx-chevrons-right.svg" alt="" /></li>
     </ul>
   );
 };
