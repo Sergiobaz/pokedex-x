@@ -2,9 +2,9 @@ const StatList = ({stats, textColor}) => {
 
   function shortingName(str) {
     if (str === "special-attack") {
-      return "S.attack";
+      return "S. att";
     } else if (str === "special-defense") {
-      return "S.defense";
+      return "S. def";
     } else {
       return str;
     }

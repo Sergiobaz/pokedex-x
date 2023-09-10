@@ -7,14 +7,23 @@ const paginateData = (items, currentPage) => {
 
   const lastPage = Math.ceil(items.length / ITEM_PER_PAGE);
 
+  //Actualiza las cantidad de paginas por bloque segun el width de la pantalla
+  const quantityOfPagesPerBlock = () => {
+    if (window.innerWidth >= 640) {
+      return 5;
+    } else {
+      return 3;
+    }
+  };
+  
+  const PAGES_PER_BLOCK = quantityOfPagesPerBlock();
 
-  const PAGES_PER_BLOCK = 3;
   const actualBlock = Math.ceil(currentPage / PAGES_PER_BLOCK);
 
   //Paginas que se van a mostar en el bloque actual
   const pagesInCurrentBlock = [];
   const maxPage = actualBlock * PAGES_PER_BLOCK;
-  const minPage = (maxPage - PAGES_PER_BLOCK) + 1;
+  const minPage = maxPage - PAGES_PER_BLOCK + 1;
   for (let i = minPage; i <= maxPage; i++) {
     if (i <= lastPage) {
       pagesInCurrentBlock.push(i);
@@ -27,6 +36,5 @@ const paginateData = (items, currentPage) => {
     pagesInCurrentBlock,
   };
 };
-
 
 export { paginateData };

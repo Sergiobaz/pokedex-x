@@ -15,6 +15,8 @@ const PokemonCard = ({ pokemonUrl }) => {
       .catch((err) => console.log(err));
   }, []);
 
+ 
+
   const textColor = lettterStylePokemonType[pokemonInfo?.types[0]]
 
   return (

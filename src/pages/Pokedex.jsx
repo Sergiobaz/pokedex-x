@@ -19,6 +19,7 @@ const Pokedex = () => {
     types,
   } = usePokedex();
 
+
   const { itemsInCurrentPage, lastPage, pagesInCurrentBlock } = paginateData(
     pokemonsByName,
     currentPage
@@ -73,3 +74,4 @@ const Pokedex = () => {
   );
 };
 export default Pokedex;
+
