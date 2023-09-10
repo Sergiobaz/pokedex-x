@@ -1,3 +1,4 @@
+
 const FIRST_PAGE = 1
 
 const Pagination = ({ currentPage, lastPage, pagesInCurrentBlock, setCurrentPage }) => {
@@ -37,8 +38,8 @@ const Pagination = ({ currentPage, lastPage, pagesInCurrentBlock, setCurrentPage
         </li>
       ))}
 
-      <li className=" cursor-pointer" onClick={handleNextPage}><img src="src/assets/bx-chevron-right.svg" alt="" /></li>
-      <li className=" cursor-pointer" onClick={handleLastPage}><img src="src/assets/bx-chevrons-right.svg" alt="" /></li>
+      <li className=" cursor-pointer" onClick={handleNextPage}><img src="/assets/bx-chevron-right.svg" alt="" /></li>
+      <li className=" cursor-pointer" onClick={handleLastPage}><img src="/assets/bx-chevrons-right.svg" alt="" /></li>
     </ul>
   );
 };
